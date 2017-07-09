@@ -4,8 +4,8 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable, :omniauthable
 
-    def self.find_or_create_from_auth_hash(auth_hash)ç
-    	find_by_auth_hast(auth_hash) || create_from_auth_hast(auth_hash)
+    def self.find_or_create_from_auth_hash(auth_hash)
+    	find_by_auth_hash(auth_hash) || create_from_auth_hash(auth_hash)
     end
 
     def self.find_by_auth_hash(auth_hash)

@@ -16,6 +16,9 @@ gem 'devise'
 # Add Facebook Authentication via omniauth
 gem 'omniauth-facebook'
 
+# Adding flat design
+gem "flat-ui-rails"
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.4'
 # Use sqlite3 as the database for Active Record
