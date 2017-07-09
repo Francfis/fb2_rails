@@ -24,12 +24,12 @@
 
         <li><%= link_to "Logout", destroy_user_session_path, method: :delete %></li>
 
-        <%else %>
+        <% else %>
         <!-- Eliminamos estos enlaces puesto que ya lo haremos a través de Facebook
         <li><%= link_to "Login", new_user_session_path %></li>
         <li><%= link_to "Sign Up", new_user_registration_path %></li>
         -->
-        <li><%= link_to "Login with Facebook", user_omniauth_authorize_path(:facebook) </li>
+        <li><%= link_to "Login with Facebook", user_facebook_omniauth_authorize_path(:facebook) %></li>
 
         <% end %>
 
